@@ -1,3 +1,5 @@
+/** Variables **/
+
 :root {
     --primary: rgb(91, 31, 50);
     --shadow: 6.6px 13.3px 13.3px hsl(0deg 0% 0% / 0.29);
@@ -37,17 +39,6 @@ ul.subMenu li {
 }
 
 
-/** Hide winner #no-spoilers **/
-.name-winner {
-    background-color: white !important;
-}
-
-/** Darker last-move **/
-div.square-last {
-    background-color: var(--last-move) !important;
-}
-
-
 /** Chat Styles  **/ 
 #boardChatBox .hbox span {
     display: none;
@@ -79,3 +70,14 @@ div.square-last {
 #boardChatInput {
     box-shadow: var(--shadow);
 }**/
+
+
+/** Hide winner #no-spoilers **/
+.name-winner {
+    background-color: white !important;
+}
+
+/** Darker last-move **/
+div.square-last {
+    background-color: var(--last-move) !important;
+}
