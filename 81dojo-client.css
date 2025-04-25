@@ -58,15 +58,16 @@ ul.subMenu li {
 #boardMessageArea {
     padding: 4px;
 }
-.dt-body-right{
- padding-right: 3px !important;   
-}
+
 
 /** Push Scrollbar out of view **/
 .dataTables_scrollBody{
     overflow: auto !important;
     padding-right: 17px; 
     box-sizing: content-box; 
+}
+.dt-body-right{
+ padding-right: 3px !important;   
 }
 
 
