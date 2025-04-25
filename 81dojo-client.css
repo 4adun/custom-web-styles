@@ -25,15 +25,17 @@ th,
 .current {
     background-color: var(--primary) !important;
 }
-
 ul.subMenu li {
     background-color: var(--primary) !important;
 }
+.ui-dialog .ui-dialog-titlebar {
+    background: var(--primary) !important;
+}
+
 .selected,
 .button-disabled {
     background-color: var(--light-mask) !important;
 }
-
 
 
 /** Clock Styles **/
