@@ -1,0 +1,81 @@
+:root {
+    --primary: rgb(91, 31, 50);
+    --shadow: 6.6px 13.3px 13.3px hsl(0deg 0% 0% / 0.29);
+    --light-mask: rgba(209, 226, 236, .62);
+    --last-move: rgba(30, 56, 255, .2);
+    --paper: url(https://81dojo.com/secure_client/img/paper.jpg);
+}
+
+/** Header and Body Styles **/
+#boardBox,
+#boardContents,
+#lobbyHBox {
+    background-image: var(--paper)!important;
+}
+.menuBar,
+th,
+.current {
+    background-color: var(--primary) !important;
+}
+
+ul.subMenu li {
+    background-color: var(--primary) !important;
+}
+.selected,
+.button-disabled {
+    background-color: var(--light-mask) !important;
+}
+
+
+
+/** Clock Styles **/
+.clock-label {
+    color: black !important;
+}
+.clock-digits {
+    border: 1px solid black !important;
+}
+
+
+/** Hide winner #no-spoilers **/
+.name-winner {
+    background-color: white !important;
+}
+
+/** Darker last-move **/
+div.square-last {
+    background-color: var(--last-move) !important;
+}
+
+
+/** Chat Styles  **/ 
+#boardChatBox .hbox span {
+    display: none;
+}
+#lobbyChatBox .hbox span {
+    display: none;
+}
+#lobbyMessageArea,
+#boardMessageArea {
+    padding: 4px;
+}
+
+
+/** Lobby Shadows **/
+.grid-wrapper,
+#lobbyMessageArea {
+    box-shadow: var(--shadow);
+}
+
+/** Board and Stands Shadows **/
+#banField,
+#senteKomadai,
+#goteKomadai{
+    box-shadow: var(--shadow);
+}
+
+/** Other Game Area Shadowas
+#boardMessageArea,
+#boardChatInput {
+    box-shadow: var(--shadow);
+}
