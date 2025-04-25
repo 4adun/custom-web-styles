@@ -32,6 +32,7 @@ ul.subMenu li {
     background: var(--primary) !important;
 }
 
+.submenu-button-disabled,
 .selected,
 .button-disabled {
     background-color: var(--light-mask) !important;
