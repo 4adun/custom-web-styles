@@ -67,7 +67,8 @@ ul.subMenu li {
 /** Board and Stands Shadows **/
 #banField,
 #senteKomadai,
-#goteKomadai{
+#goteKomadai,
+#replayButtons{
     box-shadow: var(--shadow);
 }
 
