@@ -59,6 +59,14 @@ ul.subMenu li {
     padding: 4px;
 }
 
+/** Push Scrollbar out of view **/
+.dataTables_scrollBody{
+    overflow: auto !important;
+    padding-right: 17px; 
+    box-sizing: content-box; 
+}
+
+
 
 /** Lobby Shadows **/
 .grid-wrapper,
