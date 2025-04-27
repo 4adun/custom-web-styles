@@ -1,0 +1,26 @@
+/* ==UserStyle==
+@name           81DOJO | Simply Shadows
+@namespace      https://github.com/4adun
+@version        1.0.0
+@description    A Material Design-inspired styling for 81DOJO's web client
+@author         4adun
+==/UserStyle== */
+
+
+@-moz-document url-prefix("http://81dojo.com/client/") {
+    :root {
+        --shadow: 6.6px 13.3px 13.3px hsl(0deg 0% 0% / 0.29);
+    }
+
+
+    /**Shadows**/
+    .grid-wrapper,
+    #lobbyMessageArea,
+    #banField,
+    #senteKomadai,
+    #goteKomadai,
+    #replayButtons {
+        box-shadow: var(--shadow);
+    }
+
+}
