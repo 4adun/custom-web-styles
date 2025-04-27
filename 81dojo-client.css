@@ -7,7 +7,6 @@
 ==/UserStyle== */
 
 
-
 /* 
 Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
 You must give appropriate credit to the original author.
@@ -18,102 +17,104 @@ Author: Your Name (https://yourwebsite-or-profile.com)
 
 
 @-moz-document url-prefix("http://81dojo.com/client/") {
-/** Variables **/
-:root {
-    --primary: rgb(91, 31, 50);
-    --shadow: 6.6px 13.3px 13.3px hsl(0deg 0% 0% / 0.29);
-    --light-mask: rgba(209, 226, 236, .62);
-    --last-move: rgba(30, 56, 255, .2);
-    --paper: url(https://81dojo.com/secure_client/img/paper.jpg);
+    :root {
+
+        /**TIP: Customize header-color and background-image HERE **/
+        --header-color: rgb(91, 31, 50);
+        --background-image: url(https://81dojo.com/secure_client/img/paper.jpg);
+
+        --shadow: 6.6px 13.3px 13.3px hsl(0deg 0% 0% / 0.29);
+        --light-mask: rgba(209, 226, 236, .62);
+        --last-move: rgba(30, 56, 255, .2);
         --board: url(http://81dojo.com/client/img/themes/default/ban.jpg);
-
-}
-
-
-/** Header and Body Styles, Menus**/
-#boardBox,
-#boardContents,
-#lobbyHBox,
-.vbox
-{
-    background-image: var(--paper)!important;
-}
+    }
 
 
+    /** Override in-app header theme by uncommenting below block **/
+    /**
+        .ui-dialog .ui-dialog-titlebar {
+            background: var(--header-color) !important;
+        }
+    
+        .menuBar,
+        th,
+        .current {
+            background-color: var(--header-color) !important;
+        }
+    
+        ul.subMenu li {
+            background-color: var(--header-color) !important;
+        }
+    **/
 
-/**
-.ui-dialog .ui-dialog-titlebar {
-    background: var(--primary) !important;
-}
-.menuBar,
-th,
-.current {
-    background-color: var(--primary) !important;
-}
+    /** Header and Body Styles, Menus**/
+    #boardBox,
+    #boardContents,
+    #lobbyHBox,
+    .vbox {
+        background-image: var(--background-image) !important;
+    }
 
-ul.subMenu li {
-    background-color: var(--primary) !important;
-}
-**/
-.submenu-button-disabled,
-.selected,
-.button-disabled {
-    background-color: var(--light-mask) !important;
-}
+    .submenu-button-disabled,
+    .selected,
+    .button-disabled {
+        background-color: var(--light-mask) !important;
+    }
 
-.dataTables_scrollBody{
-    overflow: auto !important;
-    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
-    box-sizing: content-box; /* So the width will be 100% + 17px */
-}
+    .dataTables_scrollBody {
+        overflow: auto !important;
+        padding-right: 17px;
+        /* Increase/decrease this value for cross-browser compatibility */
+        box-sizing: content-box;
+        /* So the width will be 100% + 17px */
+    }
 
 
-/** Clock Styles Adjustments **/
-.clock-label {
-    color: black !important;
-}
-.clock-digits {
-    border: 1px solid black !important;
-}
+    /** Clock Styles Adjustments **/
+    .clock-label {
+        color: black !important;
+    }
+    .clock-digits {
+        border: 1px solid black !important;
+    }
 
 
-/** Chat Styles  **/
-#boardChatBox .hbox span {
-    display: none;
-}
-#lobbyChatBox .hbox span {
-    display: none;
-}
-#lobbyMessageArea,
-#boardMessageArea {
-    padding: 4px;
-}
-.dt-body-right{
- padding-right: 3px !important;   
-}
+    /** Chat Styles  **/
+    #boardChatBox .hbox span {
+        display: none;
+    }
+    #lobbyChatBox .hbox span {
+        display: none;
+    }
+    #lobbyMessageArea,
+    #boardMessageArea {
+        padding: 4px;
+    }
+    .dt-body-right {
+        padding-right: 3px !important;
+    }
 
-/** Lobby Shadows **/
-.grid-wrapper,
-#lobbyMessageArea {
-    box-shadow: var(--shadow);
-}
+    /** Lobby Shadows **/
+    .grid-wrapper,
+    #lobbyMessageArea {
+        box-shadow: var(--shadow);
+    }
 
-/** Board and Stands Shadows **/
-#banField,
-#senteKomadai,
-#goteKomadai,
-#replayButtons {
-    box-shadow: var(--shadow);
-}
+    /** Board and Stands Shadows **/
+    #banField,
+    #senteKomadai,
+    #goteKomadai,
+    #replayButtons {
+        box-shadow: var(--shadow);
+    }
 
-/** Hide winner highlight #no-spoilers 
-.name-winner {
-    background-color: white !important;
-}
-**/
+    /** Hide winner highlight #no-spoilers **/
+    /**.name-winner {
+        background-color: white !important;
+    }**/
 
-/** Darker last-move **/
-div.square-last {
-    background-color: var(--last-move) !important;
-}
+    /** Darker last-move **/
+    div.square-last {
+        background-color: var(--last-move) !important;
+    }
 }
