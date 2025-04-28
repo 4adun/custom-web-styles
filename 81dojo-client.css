@@ -21,31 +21,50 @@ Author: Your Name (https://yourwebsite-or-profile.com)
 
         /**TIP: Customize header-color and background-image HERE **/
         --header-color: rgb(91, 31, 50);
+        --alt-header-color1: rgb(31, 123, 26);
+        --alt-header-color2: rgb(31, 55, 91);
+
         --background-image: url(https://81dojo.com/secure_client/img/paper.jpg);
 
         --shadow: 0px 4px 6px rgba(0, 0, 0, 0.15), 0px 8px 12px rgba(0, 0, 0, 0.20);
         --light-mask: rgba(209, 226, 236, .62);
         --last-move: rgba(30, 56, 255, .2);
         --board: url(http://81dojo.com/client/img/themes/default/ban.jpg);
+        --radius: 4px;
+
+
+        /* Small shadow (subtle lift, for small cards/buttons) */
+        --shadow-sm: 0px 1px 2px rgba(0, 0, 0, 0.15),
+        0px 1px 3px rgba(0, 0, 0, 0.25);
+
+        /* Medium shadow (standard card/elevation) */
+        --shadow-md: 0px 4px 6px rgba(0, 0, 0, 0.20),
+        0px 8px 12px rgba(0, 0, 0, 0.25);
+
+        /* Large shadow (pop-out overlays, dialogs, modals) */
+        --shadow-lg: 0px 10px 20px rgba(0, 0, 0, 0.25),
+        0px 15px 25px rgba(0, 0, 0, 0.30);
+
     }
 
 
     /** Override in-app header theme by uncommenting below block **/
-    /**
-        .ui-dialog .ui-dialog-titlebar {
-            background: var(--header-color) !important;
-        }
-    
-        .menuBar,
-        th,
-        .current {
-            background-color: var(--header-color) !important;
-        }
-    
-        ul.subMenu li {
-            background-color: var(--header-color) !important;
-        }
-    **/
+    /**  
+  
+      .ui-dialog .ui-dialog-titlebar {
+          background: var(--header-color) !important;
+      }
+  
+      .menuBar,
+      th,
+      .current {
+          background-color: var(--header-color) !important;
+      }
+  
+      ul.subMenu li {
+          background-color: var(--header-color) !important;
+      }
+  **/
 
     /** Header and Body Styles, Menus**/
     #boardBox,
@@ -53,6 +72,7 @@ Author: Your Name (https://yourwebsite-or-profile.com)
     #lobbyHBox,
     .vbox {
         background-image: var(--background-image) !important;
+
     }
 
     .submenu-button-disabled,
@@ -68,14 +88,42 @@ Author: Your Name (https://yourwebsite-or-profile.com)
         box-sizing: content-box;
         /* So the width will be 100% + 17px */
     }
-
+    #playerGridWrapper {
+        margin-bottom: 8px
+    }
 
     /** Clock Styles Adjustments **/
     .clock-label {
         color: black !important;
+        border-radius: var(--radius);
+
     }
     .clock-digits {
         border: 1px solid black !important;
+        border-radius: var(--radius);
+
+    }
+
+    .grid-wrapper, #lobbyMessageArea, #greetButton {
+        border-radius: var(--radius) !important;
+        border-width: 1px;
+        margin: 1px
+    }
+
+
+    #boardChatInput {
+        border-width: 1px;
+        border-color: #ccc !important;
+    }
+
+
+    #lobbyChatInput {
+        border-radius: var(--radius) !important;
+
+        border-width: 1px;
+        border-color: #ccc !important;
+        box-shadow: var(--shadow);
+
     }
 
 
