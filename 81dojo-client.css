@@ -23,7 +23,7 @@ Author: Your Name (https://yourwebsite-or-profile.com)
         --header-color: rgb(91, 31, 50);
         --background-image: url(https://81dojo.com/secure_client/img/paper.jpg);
 
-        --shadow: 6.6px 13.3px 13.3px hsl(0deg 0% 0% / 0.29);
+        --shadow: 0px 4px 6px rgba(0, 0, 0, 0.15), 0px 8px 12px rgba(0, 0, 0, 0.20);
         --light-mask: rgba(209, 226, 236, .62);
         --last-move: rgba(30, 56, 255, .2);
         --board: url(http://81dojo.com/client/img/themes/default/ban.jpg);
